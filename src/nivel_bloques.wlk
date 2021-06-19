@@ -18,8 +18,13 @@ object nivelBloques {
 		game.addVisual(personajeSimple)
 		
 		// teclado
-		// este es para probar, no es necesario dejarlo
-		keyboard.t().onPressDo({ self.terminar() })
+		keyboard.up().onPressDo({personajeSimple.up()})
+	
+		keyboard.down().onPressDo({personajeSimple.down()})
+	
+		keyboard.left().onPressDo({personajeSimple.left()})
+	
+		keyboard.right().onPressDo({personajeSimple.right()})
 
 		// en este no hacen falta colisiones
 	}
